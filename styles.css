@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Poppins", sans-serif;
+  font-size: 32px;
+}
+
+body {
+  height: 100vh;
+  background-color: hsl(0, 0%, 94%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 725px;
+  padding-bottom: 0.4rem;
+}
+
+#app-container {
+  min-width: 375px;
+  padding: 1.8rem;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 0.8rem;
+  border-bottom-right-radius: 6rem;
+}
+
+.date-container {
+  display: flex;
+  gap: 1.1rem;
+}
+.date-container .date-box {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+.date-container .date-box label {
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 0.5rem;
+  color: hsl(0, 1%, 44%);
+  letter-spacing: 0.1rem;
+}
+.date-container .date-box input {
+  width: 5rem;
+  padding: 0.3rem 0;
+  border-radius: 0.2rem;
+  border: 1px solid hsl(0, 0%, 86%);
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  text-indent: 0.7rem;
+  -moz-appearance: textfield;
+}
+.date-container .date-box input::placeholder {
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.date-container .date-box input::-webkit-inner-spin-button, .date-container .date-box input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.seperator-box {
+  display: flex;
+  align-items: center;
+}
+.seperator-box .seperator {
+  width: 100%;
+  height: 1px;
+  border: 1px solid hsl(0, 0%, 86%);
+}
+.seperator-box button {
+  background-color: hsl(259, 100%, 65%);
+  border: none;
+  border-radius: 50%;
+  padding: 0.75rem;
+  cursor: pointer;
+}
+
+.result-container {
+  font-weight: 800;
+  font-style: italic;
+  font-size: 3.15rem;
+  margin-top: -0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+}
+.result-container div {
+  margin-bottom: -1.2rem;
+}
+.result-container span {
+  color: hsl(259, 100%, 65%);
+  margin-right: 0.3rem;
+}
+
+/*# sourceMappingURL=styles.css.map */

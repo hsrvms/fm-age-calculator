@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico" />
+    <title>Frontend Mentor - Age Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main id="app-container">
+      <div class="card">
+        <div class="date-container">
+          <div class="date-box">
+            <label for="day">day</label>
+            <input type="number" id="day" min="1" max="31" placeholder='DD' required />
+          </div>
+          <div class="date-box">
+            <label for="month">month</label>
+            <input type="number" id="month" min="1" max="12" placeholder='MM' required />
+          </div>
+          <div class="date-box">
+            <label for="year">year</label>
+            <input type="number" id="year" min="1900" max="2023" placeholder='YYYY' required />
+          </div>
+        </div>
+        <div class="seperator-box">
+          <div class="seperator"></div>
+          <button>
+            <img src="./assets/images/icon-arrow.svg" alt="arrow-icon" />
+          </button>
+        </div>
+        <div class="result-container">
+          <div id="year-box">
+            <span>--</span>years
+          </div>
+          <div id="month-box">
+            <span>--</span>months
+          </div>
+          <div id="day-box">
+            <span>--</span>days
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

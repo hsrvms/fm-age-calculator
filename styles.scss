@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap");
+
+// COLORS //
+
+// Primary
+$purple-color: hsl(259, 100%, 65%);
+$lightRed-color: hsl(0, 100%, 67%);
+
+// Neutral
+$white-color: hsl(0, 0%, 100%);
+$offWhite-color: hsl(0, 0%, 94%);
+$lightGrey-color: hsl(0, 0%, 86%);
+$smokeyGrey-color: hsl(0, 1%, 44%);
+$offBlack-color: hsl(0, 0%, 8%);
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Poppins", sans-serif;
+  font-size: 32px;
+}
+
+body {
+  height: 100vh;
+  background-color: $offWhite-color;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 725px;
+  padding-bottom: 0.4rem;
+}
+
+#app-container {
+  min-width: 375px;
+  padding: 1.8rem;
+  background-color: $white-color;
+
+  border-radius: 0.8rem;
+  border-bottom-right-radius: 6rem;
+}
+
+.date-container {
+  display: flex;
+  gap: 1.1rem;
+
+  .date-box {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+
+    label {
+      text-transform: uppercase;
+      font-weight: 400;
+      font-size: 0.5rem;
+      color: $smokeyGrey-color;
+      letter-spacing: 0.1rem;
+    }
+
+    input {
+      width: 5rem;
+
+      padding: 0.3rem 0;
+      border-radius: 0.2rem;
+      border: 1px solid $lightGrey-color;
+
+      font-family: "Poppins", sans-serif;
+      font-size: 1rem;
+      text-indent: 0.7rem;
+
+      -moz-appearance: textfield;
+
+      &::placeholder {
+        font-family: "Poppins", sans-serif;
+        font-size: 1rem;
+
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+
+      &::-webkit-inner-spin-button,
+      &::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+      }
+    }
+  }
+}
+
+.seperator-box {
+  display: flex;
+  align-items: center;
+
+  .seperator {
+    width: 100%;
+    height: 1px;
+    border: 1px solid $lightGrey-color;
+  }
+
+  button {
+    background-color: $purple-color;
+    border: none;
+    border-radius: 50%;
+    padding: 0.75rem;
+
+    cursor: pointer;
+  }
+}
+
+.result-container {
+  font-weight: 800;
+  font-style: italic;
+  font-size: 3.15rem;
+
+  margin-top: -0.5rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+
+  div {
+    margin-bottom: -1.2rem;
+  }
+
+  span {
+    color: $purple-color;
+    margin-right: 0.3rem;
+  }
+}
