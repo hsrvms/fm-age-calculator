@@ -143,6 +143,11 @@ body {
   #app-container .card .date-container input::placeholder {
     font-size: 0.7rem;
   }
+  #app-container .card .date-container .error-msg {
+    font-size: 0.3rem;
+    font-style: italic;
+    color: #ff5757;
+  }
   #app-container .seperator-box {
     display: flex;
     align-items: center;

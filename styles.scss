@@ -184,6 +184,12 @@ body {
             font-size: 0.7rem;
           }
         }
+
+        .error-msg {
+          font-size: 0.3rem;
+          font-style: italic;
+          color: $lightRed-color;
+        }
       }
     }
 
