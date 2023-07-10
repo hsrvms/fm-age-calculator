@@ -68,6 +68,20 @@ body {
   -webkit-appearance: none;
   margin: 0;
 }
+.date-container .date-box .error-msg {
+  font-size: 0.45rem;
+  font-style: italic;
+  color: #ff5757;
+}
+.date-container .date-box .error-label {
+  color: #ff5757;
+}
+.date-container .date-box .error-border {
+  border-color: #ff5757;
+}
+.date-container .date-box .hidden {
+  display: none;
+}
 
 .seperator-box {
   display: flex;

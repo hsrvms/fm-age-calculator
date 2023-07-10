@@ -4,7 +4,7 @@
 
 // Primary
 $purple-color: hsl(259, 100%, 65%);
-$lightRed-color: hsl(0, 100%, 67%);
+$lightRed-color: #ff5757;
 
 // Neutral
 $white-color: hsl(0, 0%, 100%);
@@ -91,6 +91,24 @@ body {
         -webkit-appearance: none;
         margin: 0;
       }
+    }
+    
+    .error-msg {
+      font-size: .45rem;
+      font-style: italic;
+      color: $lightRed-color;
+    }
+
+    .error-label {
+      color: $lightRed-color;
+    }
+
+    .error-border {
+      border-color: $lightRed-color;
+    }
+
+    .hidden {
+      display: none;
     }
   }
 }

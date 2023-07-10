@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="./assets/images/favicon-32x32.png" />
     <title>Frontend Mentor - Age Calculator</title>
     <link rel="stylesheet" href="styles.css">
   </head>
@@ -12,21 +12,24 @@
       <div class="card">
         <div class="date-container">
           <div class="date-box">
-            <label for="day">day</label>
+            <label id="label-day" for="day">day</label>
             <input type="number" id="day" min="1" max="31" placeholder='DD' required />
+            <p id="error-day" class="error-msg"></p>
           </div>
           <div class="date-box">
-            <label for="month">month</label>
+            <label id="label-month" for="month">month</label>
             <input type="number" id="month" min="1" max="12" placeholder='MM' required />
+            <p id="error-month" class="error-msg"></p>
           </div>
           <div class="date-box">
-            <label for="year">year</label>
+            <label id="label-year" for="year">year</label>
             <input type="number" id="year" min="1900" max="2023" placeholder='YYYY' required />
+            <p id="error-year" class="error-msg"></p>
           </div>
         </div>
         <div class="seperator-box">
           <div class="seperator"></div>
-          <button>
+          <button id="submit">
             <img src="./assets/images/icon-arrow.svg" alt="arrow-icon" />
           </button>
         </div>
